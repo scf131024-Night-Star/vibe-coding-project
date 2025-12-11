@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夜幕之下</title> 
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="particles-js"></div> 
+
+    <div id="intro-overlay">
+        <div id="magic-circle"></div> 
+        
+        <img class="corner-element top-left" src="dragon_corner_tl.png" alt="左上神话元素">
+        <img class="corner-element top-right" src="dragon_corner_tr.png" alt="右上神话元素">
+        <img class="corner-element bottom-left" src="dragon_corner_bl.png" alt="左下神话元素">
+        <img class="corner-element bottom-right" src="dragon_corner_br.png" alt="右下神话元素">
+        
+        <img id="personal-logo" src="your_personal_logo.png" alt="个人 Logo">
+
+        <img id="club-logo" src="club_logo.png" alt="俱乐部 Logo">
+        
+        <a href="#" id="skip-intro-button">
+            [ 🌙 跳过夜幕降临 ]
+        </a>
+        <div class="blood-particles"></div>
+
+    </div>
+
+    <div id="main-content">
+        
+        <header id="main-header">
+            <h1 class="header-title">夜辰 💀 Vibe Coding 俱乐部成员</h1>
+
+            <nav id="navbar">
+                <a href="#home" class="nav-item active" data-target="home-section">圣殿首页</a>
+                <a href="#profile" class="nav-item" data-target="profile-section">个人档案</a>
+                <a href="#projects" class="nav-item" data-target="projects-section">星辉项目</a>
+                <a href="#contact" class="nav-item" data-target="contact-section">召唤密语</a>
+            </nav>
+        </header>
+
+        <section id="content-area">
+            
+            <div id="home-section" class="main-card-layout active-section">
+                <div class="profile-card">
+                    <div class="card-header">
+                        <h2>【夜幕圣殿 - 欢迎降临】</h2> 
+                    </div>
+                    
+                    <div class="card-body" style="text-align: center;">
+                        <h3>观测深空，编码未来</h3>
+                        <p id="real-time-display">加载中...</p> 
+                        <p>此区域将用于展示核心内容、最新项目或网站公告。</p>
+                        <p>要查看【群星执政官 - 夜辰】的详细档案，请点击上方 **个人档案** 链接。</p>
+                        
+                        <br>
+                        <img src="gothic_symbol.png" alt="哥特风格符号" style="width:150px; opacity: 0.5;">
+                    </div>
+                </div>
+            </div>
+            
+            <div id="profile-section" class="main-card-layout hidden-section">
+                <div class="profile-card">
+                    <div class="card-header">
+                        <h2>【群星执政官 - 夜辰】</h2> 
+                        <img src="profile_avatar.png" alt="profile_avatar.png" class="profile-avatar">
+                    </div>
+                    
+                    <div class="card-body">
+                        <h3>夜幕契约</h3>
+                        <p>姓名/花名: 夜辰 (Nocturne)</p>
+                        <p>年级身份: 11th Grade (十年级)</p>
+                        <p>座右铭: 观测深空，编码未来。</p>
+
+                        <hr class="blood-divider">
+                        
+                        <h3>星辉项目 (Projects)</h3>
+                        <ul class="project-list">
+                            <li>
+                                <h4>项目名称: 秒哒 (MiaoDa)</h4>
+                                <p>一个用于快速数据处理和分析的工具。</p>
+                                <a href="https://yourprojectlink.com/miaoda" target="_blank" class="project-link">
+                                    [访问项目链接]
+                                </a>
+                            </li>
+                            <li>
+                                <h4>项目名称: 哥特主页 V10</h4>
+                                <p>本次作业的实现，包含复杂 CSS 动画和 JS 交互。</p>
+                                <a href="#home" class="project-link">[查看本项目]</a>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card-footer">
+                        </div>
+                </div>
+            </div>
+            
+            <div id="projects-section" class="main-card-layout hidden-section">
+                <div class="project-showcase-card">
+                    <img class="project-card-image" src="project_miaoda_cover.png" alt="秒哒项目封面">
+                    <div class="project-card-content">
+                        <h3>项目 I: 秒哒 (MiaoDa)</h3>
+                        <span class="project-status">✨ 已上线 / 稳定运行</span>
+                        <p>一个用于快速处理和可视化复杂数据集的工具，旨在提高数据分析效率，支持动态图表生成和 API 集成。</p>
+                        <a href="https://yourprojectlink.com/miaoda" target="_blank" class="project-visit-button">
+                            访问项目
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-showcase-card">
+                    <img class="project-card-image" src="project_gothic_cover.png" alt="哥特主页项目封面">
+                    <div class="project-card-content">
+                        <h3>项目 II: 哥特圣殿 V23</h3>
+                        <span class="project-status">🚧 开发中 / Vibe Coding 作业</span>
+                        <p>本次主页作业的最终形态，使用纯 CSS 动画和 JS 粒子系统构建哥特式黑暗氛围，追求极简与极致视觉效果。</p>
+                        <a href="#home" class="project-visit-button">
+                            查看本项目
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="project-showcase-card">
+                    <img class="project-card-image" src="project_placeholder.png" alt="占位项目封面">
+                    <div class="project-card-content">
+                        <h3>项目 III: 【密语代号】</h3>
+                        <span class="project-status">🔒 待发布 / 封印状态</span>
+                        <p>一个关于加密算法和安全通讯的个人研究项目，旨在探索前端加密的可能性，目前处于低调开发阶段。</p>
+                        <a href="#" class="project-visit-button">
+                            查看文档 (敬请期待)
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="contact-section" class="main-card-layout hidden-section">
+                <div class="profile-card">
+                    <div class="card-header"><h2>【召唤密语】</h2></div>
+                    <div class="card-body">
+                        
+                        <div id="contact-clue-area" style="text-align: center;">
+                            <h3 class="blood-text-clue">此密语被黑暗符文保护。</h3>
+                            <p>群星执政官的通讯需由**凡人点击**触发才能显现。</p>
+                            <button id="cipher-button" class="gothic-button">
+                                💀 破译密语，显现真形
+                            </button>
+                            <img id="cipher-symbol" src="gothic_symbol.png" alt="符文" style="width:100px; opacity: 0.3; margin-top: 20px;">
+                        </div>
+
+                        <div id="contact-info" style="display: none; text-align: center;">
+                            <h3 class="blood-text-clue">>>> 通讯已建立 <<<</h3>
+                            <ul class="contact-list">
+                                <li>
+                                    <span class="contact-label">:: E-mail ::</span> 
+                                    <span class="contact-value">your.email@darkweb.com</span>
+                                </li>
+                                <li>
+                                    <span class="contact-label">:: Wechat ::</span> 
+                                    <span class="contact-value">Nocturne_Cipher_Code</span>
+                                </li>
+                                <br>
+                                <p style="font-size: 0.9em; color: #888;">密语将在下次夜幕降临时重置。</p>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script>
+        window.onload = function() {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80, // 粒子数量
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff" // 纯白色
+                    },
+                    "shape": {
+                        "type": "circle"
+                    },
+                    "opacity": {
+                        "value": 0.8,
+                        "random": true,
+                        "anim": {
+                            "enable": true,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3, // 粒子大小，3px 确保可见
+                        "random": true,
+                        "anim": {
+                            "enable": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": false // 不连接线条
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 1.5, // 缓慢飘落
+                        "direction": "bottom", // 向下飘落
+                        "random": true,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false
+                    }
+                },
+                "interactivity": {
+                    "enable": false // 禁用鼠标互动
+                },
+                "retina_detect": true,
+            });
+        };
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
